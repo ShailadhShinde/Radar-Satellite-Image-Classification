@@ -81,8 +81,6 @@ The files consist of a list of images, and for each image, you can find the foll
 inc_angle - the incidence angle of which the image was taken. Note that this field has missing data marked as "na", and those images with "na" incidence angles are all in the training data to prevent leakage.
 - is_iceberg - the target variable, set to 1 if it is an iceberg, and 0 if it is a ship. This field only exists in train.json.
 
-`The train data` contains time series of the stores and the product families combination. The sales column gives the total sales for a product family at a particular store at a given date. Fractional values are possible since products can be sold in fractional units (1.5 kg of cheese, for instance, as opposed to 1 bag of chips).The onpromotion column gives the total number of items in a product family that were being promoted at a store at a given date.
-
 - ### Preprocessing  <a name="pp"></a>
   - Due to the relatively small train set I used Image augmentation.For augmentation I used flip, flop, zoom, rotation and shift.
   - Added third channel as band3 (band1 + band2)/2.
